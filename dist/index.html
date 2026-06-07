@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leetstats</title>
+  <link rel="stylesheet" crossorigin href="/assets/index-CrbjblP0.css">
+</head>
+<body class="body w-screen h-screen bg-linear-to-r from-cyan-500 to-blue-500 flex justify-center items-center">
+    <div class="container  max-w-4xl w-[50%]  flex flex-col p-5 rounded-2xl gap-[2rem] bg-linear-to-bl from-glass to-fuchsia-100 shadow-black shadow-xl/30 text-shadow-lg/20 ">
+        <h1 class="head  text-4xl font-mono font-bold">LeetStats</h1>
+        <div class="user justify-start">
+            <p>Enter Your Username</p>
+            <div class="userinput flex gap-6 mt-2">
+                <input class="input  bg-[#f8f7ffbf] rounded-md w-3/4 p-1  " type="text" placeholder="username" >
+                <button class="search hover:scale-110 transition-all ease-linear w-1/4 rounded-lg bg-[#f8f7ffbf] ">Search</button>
+            </div>
+        </div>
+
+
+        <div class="stats_container   ">
+           <div class="progress flex-wrap flex flex-row place-content-around ">
+                <div class="progressitem hover:scale-110 transition-all ease-linear bg-[conic-gradient(rgb(2,95,2)_var(--progress-deg,0%),#42c56e_0%)] w-[120px] h-[120px]  border-3 border-lime-700 rounded-[50%] relative flex items-center justify-center " >
+                <div class="easy  flex flex-col items-center justify-center gap-1">
+                    <span class="easy-level">Easy</span>
+                    <span class="easy-count text-sm font-medium"></span>
+                </div>
+                </div >
+                <div class="progressitem hover:scale-110 transition-all ease-linear bg-[conic-gradient(#FDDA0D_var(--progress-deg,0%),#FFFDD0_0%)] w-[120px] h-[120px] border-amber-500 border-3 rounded-[50%] relative flex items-center justify-center ">
+                    <div class="medium flex flex-col items-center justify-center gap-1">
+                    <span class="medium-level">Medium</span>
+                    <span class="medium-count text-sm font-medium"></span>
+                    </div>
+
+                </div>
+                <div class="progressitem hover:scale-110 transition-all ease-linear bg-[conic-gradient(#D10000_var(--progress-deg,0%),rgba(235,138,138)_0%)] w-[120px] h-[120px] border-red-700 border-3 rounded-[50%] relative flex items-center justify-center ">
+                    <div class="hard flex flex-col items-center justify-center gap-1">
+                    <span class="hard-level">Hard</span>
+                    <span class="hard-count text-sm font-medium"></span>
+                    </div>
+                </div>
+
+           </div>
+           <div class="scard mt-2">
+                
+           </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
