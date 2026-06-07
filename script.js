@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
         
            statscont.innerHTML = cards.map(data => { return `
-               <div class="card p-2 m-2 bg-white/70 rounded hover:scale-110 transition-all ease-linear">
+               <div class="card p-2 m-4 bg-white/70 rounded hover:scale-105 transition-all ease-linear">
                   <h3 class="font-semibold">${data.label}</h3>
                   <p class="text-sm">${data.value}</p>
               </div>
@@ -114,6 +114,13 @@ document.addEventListener("DOMContentLoaded", function(){
     
     
     search.addEventListener('click', function(){
+        search.style.setProperty('transition-property', 'transform');
+        search.style.setProperty('transition-duration', '0.1s');
+        search.style.setProperty('transform', 'scale(0.9)');
+        search.style.setProperty('transition-timing-function', 'linear');
+        setTimeout(() => {
+            search.style.setProperty('transform', 'scale(1)');
+        }, 80);
         const username = usernameInput.value;
         console.log(username);
         if(validateUsername(username)){
